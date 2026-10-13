@@ -109,9 +109,11 @@ print(count_aeach_ch('LLM is Neural network try to predict the nett token  or pi
 
 # Question 2 return the string in reverse order using for loop
 def reverse_string(s):
+    result = ""
     for character in range(len(s)-1 ,-1 ,-1):
-        print(character)
-print(reverce_list('gowtham'))
+        result += s[character]
+    return result
+print(reverce_list('apple'))
 
 # Question 3 treurn TRUE if the string reads the same forward and backward for example(MADAM)
 
@@ -128,4 +130,15 @@ def s_palindrom(s):
         return False
 print(s_palindrom('gowtham'))
 
+
+# return the vowels are in the string 
+
+def count_vowels(s):
+    vowels_leter = ['a','e','i','o','u']
+    count_let_vowels = 0
+    for ch in s . lower() :
+        if ch in vowels_leter:
+            count_let_vowels += 1
+    return count_let_vowels
+print(count_vowels('Appl'))
 
