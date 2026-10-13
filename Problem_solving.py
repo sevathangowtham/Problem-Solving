@@ -105,5 +105,27 @@ def count_aeach_ch (text):
             counts[ch] = 1 
     return counts
 
-print(count_aeach_ch('LLM is Neural network try to predict the nest token on or pices of word the word which you have given so far '))
+print(count_aeach_ch('LLM is Neural network try to predict the nett token  or pices of word the word which you have given so far '))
+
+# Question 2 return the string in reverse order using for loop
+def reverse_string(s):
+    for character in range(len(s)-1 ,-1 ,-1):
+        print(character)
+print(reverce_list('gowtham'))
+
+# Question 3 treurn TRUE if the string reads the same forward and backward for example(MADAM)
+
+def s_palindrom(s):
+    a =[]
+    b =[]
+    for forward in s:
+        a.append(forward)
+    for backward in range(len(s)-1,-1,-1):
+        b.append(s[backward])
+    if a ==b:
+        return True
+    else:
+        return False
+print(s_palindrom('gowtham')) 
+
 
