@@ -126,6 +126,6 @@ def s_palindrom(s):
         return True
     else:
         return False
-print(s_palindrom('gowtham')) 
+print(s_palindrom('gowtham'))
 
 
