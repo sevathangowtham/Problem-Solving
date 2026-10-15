@@ -142,3 +142,50 @@ def count_vowels(s):
     return count_let_vowels
 print(count_vowels('Appl'))
 
+# Leson 3 big O Notation used to measure rining time and space as our program grows as input size gorw as 
+
+
+#nested for loop 
+
+visit_each_time= [1,2,3]
+for i in visit_each_time:
+    for j in visit_each_time:#
+        print(i,j)  # so the inner loop fenish before move to the oupter loop
+
+
+#Code	3 numbers	1,000 numbers	Big O
+#nums[0]	1 step	1 step	O(1)
+#One loop	3 steps	1,000 steps	O(n)
+#Loop inside a loop	9 steps	1,000,000 steps	O(n²)
+
+# understanding of each time complexity in the first one is big O notation O(1) even if we have a milion of value we are going to take the only one values so its a O(1) 
+# the second one is it will incrice as input gorw as which means it will check each item of the list 
+# taird one is  nested loop n*n
+
+#O(1) 
+nums = [10,20,30,40,50,]
+print(nums[0]) # so we can see here we accessing only one values even if we have 4 or 4 milion we are doing onyu one step 
+
+#O(n) just impagine we have a some targe valus we need to find out the target tis 40 we know the values but we don't have any idea se we need to check every box
+
+def find_target(numbers , target):
+
+    for find in range (len(numbers)):
+        if numbers[find] == target:
+            return find
+    return -1 
+
+print(find_target([100, 20, 30, 40], 30))  
+
+#find_min(nums) returns the smallest number, using a loop like your find_max.
+find_valus = [100,20,30]
+
+finding_min = find_valus[0]
+
+for find_mas in find_valus:
+
+    if find_mas <  finding_min:
+
+        finding_min = find_mas
+        
+print(finding_min)
